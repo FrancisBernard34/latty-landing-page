@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latty - Adopt Your Best Friend</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/latty-logo.png" alt="Latty Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pets">Featured Pets</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Furry Friend</h1>
+            <p>Adopt a pet today with Latty and bring joy to your home. Our platform connects loving homes with animals that need care and affection.</p>
+            <div class="cta-container">
+                <a href="#contact" class="cta primary">Get Started</a>
+                <a href="#how-it-works" class="cta secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-dog-cat.png" alt="Happy dog and cat">
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How Latty Works</h2>
+        <p class="section-subtitle">Three simple steps to find your perfect companion</p>
+        
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Browse</h3>
+                <p>Search through our database of pets looking for a forever home based on breed, age, and location.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Connect</h3>
+                <p>Reach out to shelters or current owners to schedule a meet and greet with your potential new companion.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Adopt</h3>
+                <p>Complete the adoption process and welcome your new best friend into your loving home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose Latty?</h2>
+        <p class="section-subtitle">The best platform to find your perfect pet companion</p>
+        
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fas fa-paw"></i>
+                <h3>Wide Selection</h3>
+                <p>Browse a variety of pets ready for adoption from different shelters and individuals.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Easy Process</h3>
+                <p>Simple steps to find and adopt your pet with our streamlined application system.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Get help every step of the way from our dedicated team of pet adoption specialists.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Local Options</h3>
+                <p>Find pets available near you to make the adoption process convenient and smooth.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-md"></i>
+                <h3>Vet Verified</h3>
+                <p>All pets on our platform have been checked by veterinarians and are in good health.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>Community</h3>
+                <p>Join our community of pet lovers sharing advice, stories, and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pets" class="featured-pets">
+        <h2>Featured Pets</h2>
+        <p class="section-subtitle">These adorable companions are looking for their forever homes</p>
+        
+        <div class="pets-carousel">
+            <div class="pet-card">
+                <div class="pet-image">
+                    <img src="images/golden-retriever.jpg" alt="Golden Retriever">
+                </div>
+                <div class="pet-info">
+                    <h3>Max</h3>
+                    <p>Golden Retriever, 2 years</p>
+                    <p>Friendly, playful, great with kids</p>
+                    <a href="#" class="pet-button">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <div class="pet-image">
+                    <img src="images/tabby-cat.jpg" alt="Tabby Cat">
+                </div>
+                <div class="pet-info">
+                    <h3>Luna</h3>
+                    <p>Tabby Cat, 1 year</p>
+                    <p>Affectionate, independent, loves to cuddle</p>
+                    <a href="#" class="pet-button">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <div class="pet-image">
+                    <img src="images/border-collie.jpg" alt="Border Collie">
+                </div>
+                <div class="pet-info">
+                    <h3>Bella</h3>
+                    <p>Border Collie, 3 years</p>
+                    <p>Energetic, intelligent, loves to run</p>
+                    <a href="#" class="pet-button">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <div class="pet-image">
+                    <img src="images/siamese-cat.jpg" alt="Siamese Cat">
+                </div>
+                <div class="pet-info">
+                    <h3>Oliver</h3>
+                    <p>Siamese Cat, 2 years</p>
+                    <p>Vocal, social, very intelligent</p>
+                    <a href="#" class="pet-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <a href="#" class="cta">View All Pets</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Pet Parents Say</h2>
+        <p class="section-subtitle">Success stories from our amazing community</p>
+        
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-image">
+                    <img src="images/testimonial-1.jpg" alt="Sarah and her dog">
+                </div>
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Latty made finding my perfect companion so easy! The process was seamless, and now Rex and I are inseparable. Thank you, Latty!"</p>
+                    <h4>Sarah Johnson</h4>
+                    <p class="location">New York, NY</p>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-image">
+                    <img src="images/testimonial-2.jpg" alt="Michael and his cat">
+                </div>
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I was nervous about adoption, but Latty guided me through every step. Now Whiskers has become an essential part of our family!"</p>
+                    <h4>Michael Rodriguez</h4>
+                    <p class="location">Austin, TX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-banner">
+        <div class="app-content">
+            <h2>Take Latty Everywhere</h2>
+            <p>Download our mobile app to browse pets, receive notifications, and manage your adoption process on the go.</p>
+            <div class="app-buttons">
+                <a href="#" class="app-button">
+                    <i class="fab fa-apple"></i>
+                    <span>Download on the<br><strong>App Store</strong></span>
+                </a>
+                <a href="#" class="app-button">
+                    <i class="fab fa-google-play"></i>
+                    <span>Get it on<br><strong>Google Play</strong></span>
+                </a>
+            </div>
+        </div>
+        <div class="app-image">
+            <img src="images/app-mockup.png" alt="Latty mobile app">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Have questions about pet adoption or need assistance? Reach out to our friendly team!</p>
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Pet Lane, Pawsville, CA 94103</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@latty.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <select id="subject">
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="adoption">Adoption Inquiry</option>
+                        <option value="support">General Support</option>
+                        <option value="partnership">Partnership</option>
+                    </select>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p id="form-status"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About Latty</h3>
+                <p>Latty connects loving homes with pets in need of adoption. Our mission is to ensure every pet finds their forever home.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pets">Featured Pets</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for pet adoption tips and updates.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Latty. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
