@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         contactForm.addEventListener("submit", function(event) {
             event.preventDefault();
             
-            formStatus.textContent = "Sending...";
+            formStatus.textContent = "Enviando...";
             
             // Replace these with your actual EmailJS service ID, template ID, and user ID
             const serviceID = "YOUR_SERVICE_ID";
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             emailjs.send(serviceID, templateID, formData)
                 .then(() => {
-                    formStatus.textContent = "Message sent successfully!";
+                    formStatus.textContent = "Mensagem enviada com sucesso!";
                     formStatus.style.color = "green";
                     contactForm.reset();
                     
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     }, 5000);
                 })
                 .catch((error) => {
-                    console.error("Email error:", error);
-                    formStatus.textContent = "Failed to send message. Please try again.";
+                    console.error("Erro de email:", error);
+                    formStatus.textContent = "Falha ao enviar mensagem. Por favor, tente novamente.";
                     formStatus.style.color = "red";
                     
                     setTimeout(() => {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const email = this.querySelector("input").value;
             
             // Here you would typically send this to your backend
-            alert("Thank you for subscribing with: " + email);
+            alert("Obrigado por se inscrever na newsletter da Ong 4 Patas com: " + email);
             this.reset();
         });
     }
