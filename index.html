@@ -29,6 +29,7 @@
           <li><a href="#how-it-works">Como Funciona</a></li>
           <li><a href="#features">Recursos</a></li>
           <li><a href="#pets">Pets em Destaque</a></li>
+          <li><a href="#donations">Doações</a></li>
           <li><a href="#testimonials">Depoimentos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -221,6 +222,68 @@
       </div>
     </section>
 
+    <section id="donations" class="donations">
+      <div class="donations-container">
+        <div class="donations-content">
+          <h2>Faça Parte da Nossa Missão</h2>
+          <p class="section-subtitle">Ajude-nos a continuar resgatando e cuidando dos animais em situação de rua</p>
+          
+          <div class="donation-text">
+            <p>A Ong 4 Patas não é apenas uma plataforma de adoção - somos uma organização dedicada ao resgate e cuidado de animais em situação de vulnerabilidade. Todos os dias, nossa equipe trabalha incansavelmente para:</p>
+            
+            <ul class="donation-list">
+              <li><i class="fas fa-paw"></i> Resgatar animais abandonados e em situação de risco</li>
+              <li><i class="fas fa-heart"></i> Fornecer atendimento veterinário emergencial</li>
+              <li><i class="fas fa-home"></i> Oferecer abrigo temporário seguro</li>
+              <li><i class="fas fa-medkit"></i> Garantir tratamento médico e reabilitação</li>
+              <li><i class="fas fa-hands-helping"></i> Preparar os animais para adoção responsável</li>
+            </ul>
+
+            <p>Sua doação é fundamental para mantermos esse trabalho. Com ela, conseguimos:</p>
+          </div>
+
+          <div class="donation-cards">
+            <div class="donation-card">
+              <i class="fas fa-syringe"></i>
+              <h3>Tratamento Médico</h3>
+              <p>Vacinas, medicamentos e cirurgias necessárias</p>
+            </div>
+            <div class="donation-card">
+              <i class="fas fa-utensils"></i>
+              <h3>Alimentação</h3>
+              <p>Ração de qualidade e suplementos especiais</p>
+            </div>
+            <div class="donation-card">
+              <i class="fas fa-house-medical"></i>
+              <h3>Estrutura</h3>
+              <p>Manutenção do abrigo e equipamentos</p>
+            </div>
+          </div>
+
+          <div class="donation-methods">
+            <h3>Como Doar</h3>
+            <p>Você pode nos ajudar através de uma doação via PIX:</p>
+            
+            <div class="pix-info">
+              <div class="pix-qr">
+                <i class="fas fa-qrcode"></i>
+                <p>Escaneie o QR Code</p>
+              </div>
+              <div class="pix-key">
+                <i class="fas fa-key"></i>
+                <p>Chave PIX: contato@ong4patas.com</p>
+                <button class="copy-pix" onclick="copyPixKey()">
+                  Copiar Chave <i class="fas fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <p class="donation-note">Toda doação, independente do valor, faz diferença na vida dos nossos animais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="testimonials" class="testimonials">
       <h2>O Que Dizem os Pais de Pets</h2>
       <p class="section-subtitle">
@@ -360,10 +423,22 @@
       <div class="footer-bottom">
         <p>&copy; 2025 Ong 4 Patas. Todos os direitos reservados.</p>
         <div class="footer-legal">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Serviço</a>
+          <a href="privacy-policy.html">Política de Privacidade</a>
+          <a href="terms.html">Termos de Serviço</a>
         </div>
       </div>
     </footer>
+
+    <div id="cookie-consent" class="cookie-banner">
+        <div class="cookie-content">
+            <i class="fas fa-cookie-bite"></i>
+            <p>Usamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="privacy-policy.html">Política de Privacidade</a>.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="cookie-accept">Aceitar</button>
+                <button id="reject-cookies" class="cookie-reject">Rejeitar</button>
+            </div>
+        </div>
+    </div>
+
   </body>
 </html>

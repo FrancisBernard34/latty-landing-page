@@ -102,4 +102,65 @@ document.addEventListener("DOMContentLoaded", function() {
             this.reset();
         });
     }
+
+    // Função para copiar a chave PIX
+    window.copyPixKey = function() {
+        const pixKey = "contato@ong4patas.com";
+        navigator.clipboard.writeText(pixKey).then(() => {
+            const button = document.querySelector('.copy-pix');
+            const originalText = button.innerHTML;
+            button.innerHTML = 'Copiado! <i class="fas fa-check"></i>';
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Erro ao copiar: ', err);
+            alert('Não foi possível copiar a chave PIX. Por favor, copie manualmente.');
+        });
+    };
+
+    // Cookie Consent Management
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptButton = document.getElementById('accept-cookies');
+    const rejectButton = document.getElementById('reject-cookies');
+
+    // Verifica se já existe uma preferência salva
+    if (!localStorage.getItem('cookiePreference')) {
+        setTimeout(() => {
+            cookieConsent.classList.add('show');
+        }, 2000); // Mostra o banner após 2 segundos
+    }
+
+    // Função para salvar a preferência e esconder o banner
+    function setCookiePreference(accepted) {
+        localStorage.setItem('cookiePreference', accepted);
+        localStorage.setItem('cookieTimestamp', new Date().getTime());
+        cookieConsent.classList.remove('show');
+
+        // Se aceito, você pode inicializar aqui seus scripts de analytics
+        if (accepted === 'true') {
+            // Exemplo: initializeAnalytics();
+        }
+    }
+
+    // Event listeners para os botões
+    acceptButton.addEventListener('click', () => setCookiePreference('true'));
+    rejectButton.addEventListener('click', () => setCookiePreference('false'));
+
+    // Verificar e renovar o consentimento após 6 meses
+    const checkCookieExpiration = () => {
+        const timestamp = localStorage.getItem('cookieTimestamp');
+        if (timestamp) {
+            const sixMonths = 180 * 24 * 60 * 60 * 1000; // 180 dias em milissegundos
+            if (new Date().getTime() - parseInt(timestamp) > sixMonths) {
+                localStorage.removeItem('cookiePreference');
+                localStorage.removeItem('cookieTimestamp');
+                cookieConsent.classList.add('show');
+            }
+        }
+    };
+
+    // Verificar expiração do consentimento
+    checkCookieExpiration();
 });
