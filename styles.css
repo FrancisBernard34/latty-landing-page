@@ -667,6 +667,10 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+.pix-qr img {
+    width: 400px;
+}
+
 .pix-key p {
     margin-bottom: 1rem;
     font-weight: 500;
