@@ -1020,6 +1020,14 @@ footer {
         gap: 1rem;
     }
 
+    .pix-qr {
+        padding: 1rem;
+    }
+
+    .pix-qr img {
+        width: 230px;
+    }
+
     .app-buttons {
         flex-direction: column;
     }
